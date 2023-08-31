@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "689f8626-8892-4e0d-94f9-260dec084842",
+		"name": "Диплом",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25453375",
+		"_collection_link": "https://www.postman.com/bold-space-23731/workspace/diploma-workspace/collection/25453375-689f8626-8892-4e0d-94f9-260dec084842?action=share&creator=25453375&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Тестовый запрос с токеном",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token_global={{token_skyeng}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-vimbox.skyeng.ru/api/v1/compilations/showcase",
+					"protocol": "https",
+					"host": [
+						"api-vimbox",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"compilations",
+						"showcase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Тестовый запрос без токена",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-vimbox.skyeng.ru/api/v1/compilations/showcase",
+					"protocol": "https",
+					"host": [
+						"api-vimbox",
+						"skyeng",
+						"ru"
+					],
+					"path": [
+						"api",
+						"v1",
+						"compilations",
+						"showcase"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token_skyeng",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VySWQiOjE0NzIwMDY5LCJpZGVudGl0eSI6InRlc3QudHN0MzIwQHNreWVuZy5ydSIsImlkZW50aXR5TG9naW4iOm51bGwsImlkZW50aXR5RW1haWwiOiJ0ZXN0LnRzdDMyMEBza3llbmcucnUiLCJpZGVudGl0eVBob25lIjoiKzc5ODU0NTg2NTY4IiwibmFtZSI6InRlc3QiLCJzdXJuYW1lIjpudWxsLCJlbWFpbCI6InRlc3QudHN0MzIwQHNreWVuZy5ydSIsInVpTGFuZ3VhZ2UiOiJydSIsImxvY2FsZSI6InJ1Iiwic2VydmljZUxvY2FsZSI6bnVsbCwidWFzIjozMCwiand0VHlwZSI6MSwianRpIjoiOHg0QXVZa2ZGSmNzdE9UZHpLaWRUNVZYODNsaGRzQW0iLCJicmFuZCI6bnVsbCwiZXhwIjoxNjkxNzMyODQwLCJhSXNTdHJvbmciOnRydWUsImFUeXBlIjoiVVNFUk5BTUVfUEFTU1dPUkQiLCJhVGltZSI6MTY5MTY0NjQzNywicm9sZXMiOlsiUk9MRV9URUFDSEVSX0NBTkRJREFURSIsIlJPTEVfVEVBQ0hFUl9DQU5ESURBVEVfQkFTRV9BQ0NFU1MiLCJST0xFX1RUQ19VU0FHRSIsIlJPTEVfVklNQk9YX1RFQUNIRVJfVVNBR0UiLCJST0xFX1RFQUNIRVIiLCJST0xFX0NSTTJfVEVBQ0hFUl9BQ0NFU1MiLCJST0xFX01BVEhfVEVBQ0hFUiIsIlJPTEVfTUFUSF9DT05URU5UX1RIRU1FX1ZJRVciXX0.YVguE6JNX-G0S3-c6Ol3eHCLo3D_k1c35x0fmCravMuQ6M1a2igY-xfA1SeMl4FRePhb9qFIeFVAMKxJIlQel5D9_P_3csVo9AhGKWeKY5albQ04cBGYWFKCjHkQBZWYGMxUkDnS6FPIIFu6v-9rB8nujVT_TBJtq4noGuCkyy7oyMJo11W3v4Ihe2NZFAhKPrZsMMPi1ZUm30D_YmkgGFNFBp6FNiuxOqqUVPQEPfdMPbbSzLIUPVnkgLY-O3dOLcKnIk8wSXo8qNH15giXSFfdczD4DBV7H1dB2Q0aEUmeQWBXBHR9wjt-jBaNwcdIu6aLUQqoqTx0aLCSMG-NW3Kr_E2I0gNOHhy0_yG8vRca-4CslfScnwpyIQfX2js9W3VTvCL4JFD0qKxLu-Jnw6d5q_1uGaFzgchD_1WcK9EqxUfmwLYjzDhat28xpdCf-Gd1_DriNsB3-48D-9GuDMuKP-rM_sE_O6IU47BYmKd28msiA0GLcHEkPfCau6uKNP0tAXhay_aSfhhJyRPGF0cdZ8_yvSIejw_safbii15FU54U3v17Zdrw43E8wQWJoXNeNSXe7GegxDr97RXtzPwzJ0GYCKyPXQW_AOP1KXnndNIR_Ub4lx7hu9tIO0XxmHK0cW5qUCYsK5zoQxIZxmN5afBSitf2qfa-YZfOgyg",
+			"type": "string"
+		}
+	]
+}
